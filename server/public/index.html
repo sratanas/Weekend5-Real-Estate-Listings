@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Styles -->
+    <link href = "styles/css/bootstrap.css" rel = "stylesheet">
+    <link href = "styles/style.css" rel = "stylesheet">
+
+    <!-- Scripts -->
+    <script src="vendors/angular/angular.js"></script>
+    <script src="vendors/angular-route/angular-route.js"></script>
+    <script src="scripts/client.js"></script>
+
+    <!-- Controllers -->
+    <script src="scripts/controllers/rent.controller.js"></script>
+    <script src="scripts/controllers/sale.controller.js"></script>
+
+    <!-- Services -->
+    <script src = "scripts/services/rent.service.js"></script>
+    <script src = "scripts/services/sale.service.js"></script>
+
+    <title>Weekend 5 Challenge -- Real Estate</title>
+</head>
+
+
+<body ng-app="RealestateApp">
+    <h1>Real Estate!</h1>
+    <a href="#!rent">For Rent</a>
+    <a href="#!sale">For Sale</a>  
+    <ng-view></ng-view>
+</body>
+</html>
