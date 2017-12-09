@@ -1,0 +1,25 @@
+
+<div class = "container">
+<h1>FOR SALE</h1>
+<table class = "table">
+    
+<thead>
+    <tr>
+        <th>Listing Id</th>
+        <th>Asking Price</th>
+        <th>Square Footage</th>
+        <th>Location</th>
+    </tr>
+</thead>
+    <tbody>
+        <tr ng-repeat="sale in vm.sale.list">
+            <td> {{sale._id}} </td>
+            <td> {{sale.cost}} </td>
+            <td> {{sale.sqft}} </td>
+            <td> {{sale.city}} </td>
+            <!-- <td><button ng-click="vm.deleteHero(hero)">Delete</button></td>     -->
+        </tr>   
+
+    </tbody>
+</table>
+</div>

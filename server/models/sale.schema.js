@@ -11,4 +11,4 @@ var saleSchema = new Schema({
 
 });
 
-module.exports = mongoose.model('sale', saleSchema);
+module.exports = mongoose.model('listings', saleSchema);

@@ -1,0 +1,19 @@
+button {
+    margin:20px;
+}
+
+.jumbotron {
+    margin:20px;
+    padding: 25px;
+    background-color: rgb(125, 214, 255)
+}
+
+.navbar {
+    background-color: rgb(253, 194, 56);
+    font-weight: bold;
+
+}
+
+.lead {
+    margin-left: 25px;
+}

@@ -1,15 +1,26 @@
 var express = require('express');
-var app = express();
 var bodyParser = require('body-parser');
 
-var port = process.env.PORT || 5000;
+var mongooseConnection = require('./modules/mongoose-connection');
+var rent = require('./routes/rent.js');
+var sale = require('./routes/sale.js');
 
+var app = express();
+
+/** ---------- MIDDLEWARE ---------- **/
 app.use(express.static('server/public'));
+app.use(bodyParser.json()); // needed for angular requests
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+/** ---------- DATABASE CONNECTION ---------- **/
+mongooseConnection.connect(); // module to spin up mongoose
 
+/** ---------- EXPRESS ROUTES ---------- **/
+app.use('/rent', rent);
+app.use('/sale', sale);
 
-app.listen(port, function(){
-    console.log('listening on port', port);  
+/** ---------- START SERVER ---------- **/
+var port = 5000;
+app.listen(port, function() {
+    console.log('Listening on port: ', port);
 });
+

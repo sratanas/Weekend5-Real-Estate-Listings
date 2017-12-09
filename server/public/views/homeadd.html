@@ -1,0 +1,37 @@
+<div class="container">
+
+    <h2>Welcome</h2>
+    <p>Add a listing:</p>
+
+    <select name="addNewSelect" id="addNewSelect" ng-model="addNewSelect">
+        <option value="">Please select</option>
+        <!-- not selected / blank option -->
+        <option value="sale">Add Sale</option>
+        <!-- interpolation -->
+        <option value="rent">Add rental</option>
+       </select>
+       <br>
+       <br>
+        <ng-show ng-show="addNewSelect=='sale'">
+        <label>Cost  </label>
+        <input ng-show="addNewSelect=='sale'" type="Number" ng-model="vm.newSale.cost"><br>
+        <label>Square footage  </label>
+        <input type="Number" ng-model="vm.newSale.sqft"><br>
+        <label>Location (city)  </label>
+        <input type="text" ng-model="vm.newSale.city" ><br>
+        <button ng-click="vm.addNewSale(vm.newSale)">Save</button></td>    
+    </ng-show>
+        
+
+
+    <ng-show ng-show="addNewSelect=='rent'">
+            <label>Rent </label>
+             <input ng-show="addNewSelect=='rent'" type="Number" ng-model="vm.newRental.rent"><br>
+             <label>Square footage  </label>
+             <input type="Number" ng-model="vm.newRental.sqft"><br>
+             <label>Location (city)  </label>
+             <input type="text" ng-model="vm.newRental.city" ><br>
+             <button ng-click="vm.addNewRental(vm.newRental)">Save</button></td>    
+         </ng-show>
+</div>
+

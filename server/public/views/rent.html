@@ -1,22 +1,24 @@
+<div class = "container">
 <h1>RENTALS</h1>
-
 <table class = "table">
+    
 <thead>
     <tr>
-        <th>Id</th>
-        <th>Cost</th>
+        <th>Listing Id</th>
+        <th>Rent per year</th>
         <th>Square Footage</th>
         <th>Location</th>
     </tr>
 </thead>
     <tbody>
         <tr ng-repeat="rent in vm.rent.list">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <!-- <td><button ng-click="vm.deleteHero(hero)">Delete</button></td>     -->
+            <td> {{rent._id}} </td>
+            <td> {{rent.rent}} </td>
+            <td> {{rent.sqft}} </td>
+            <td> {{rent.city}} </td>
+            <td><button ng-click="vm.deleteRental(vm.rent)">Delete</button></td>    
         </tr>   
 
     </tbody>
 </table>
+</div>

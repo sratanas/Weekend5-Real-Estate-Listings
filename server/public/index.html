@@ -17,19 +17,30 @@
     <!-- Controllers -->
     <script src="scripts/controllers/rent.controller.js"></script>
     <script src="scripts/controllers/sale.controller.js"></script>
+    <script src="scripts/controllers/add.controller.js"></script>
 
     <!-- Services -->
     <script src = "scripts/services/rent.service.js"></script>
     <script src = "scripts/services/sale.service.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
 
     <title>Weekend 5 Challenge -- Real Estate</title>
 </head>
 
 
+<div class = "container">
 <body ng-app="RealestateApp">
-    <h1>Real Estate!</h1>
-    <a href="#!rent">For Rent</a>
-    <a href="#!sale">For Sale</a>  
+    <div class = "jumbotron">
+    <h1>Great Minnesota Real Estate</h1> 
+    <p class="lead">Minnesota's place for home sale and rental listings.</p>
+</div>
+    <nav class = "navbar navbar-light bg-faded">
+    <a class="navbar-brand" href="#!">HOME/SEARCH</a>
+    <a class="navbar-brand" href="#!rent">FOR RENT</a>
+    <a class="navbar-brand" href="#!sale">FOR SALE</a> </nav>
+  
     <ng-view></ng-view>
 </body>
+</div>
 </html>

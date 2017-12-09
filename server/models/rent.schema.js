@@ -7,8 +7,11 @@ var Schema = mongoose.Schema;
 var rentSchema = new Schema({
     rent: { type: Number },
     sqft: { type: Number },
-    city: { type: String },
-
+    city: { type: String }, 
 });
 
-module.exports = mongoose.model('rent', rentSchema);
+
+// var collectionName = 'rentals'
+// var M = mongoose.model('rentals', rentschema, rentals)
+
+module.exports = mongoose.model('rentals', rentSchema);
