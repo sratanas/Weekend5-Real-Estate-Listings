@@ -4,4 +4,6 @@ app.controller('AddController',['RentService','SaleService', function(RentServic
     self.addNewSale = SaleService.addNewSale;
     self.newRental = RentService.newRental;
     self.addNewRental = RentService.addNewRental;
+    self.deleteRental = RentService.deleteRental;
+    
 }])

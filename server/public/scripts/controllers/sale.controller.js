@@ -4,4 +4,5 @@ app.controller('SaleController',['SaleService', function(SaleService){
     self.getListings = SaleService.getListings;
     self.newSale = SaleService.newSale;
     self.addNewSale = SaleService.addNewSale;
+    self.deleteListing = SaleService.deleteListing;
 }])

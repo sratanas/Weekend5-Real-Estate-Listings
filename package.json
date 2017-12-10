@@ -10,6 +10,7 @@
     "bootstrap": "^3.3.7",
     "express": "^4.16.2",
     "mongoose": "^4.13.6",
+    "mongoose-delete": "^0.4.0",
     "sweetalert": "^2.0.8"
   },
   "devDependencies": {},

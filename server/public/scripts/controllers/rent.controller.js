@@ -4,4 +4,5 @@ app.controller('RentController',['RentService', function(RentService){
     self.getRentals = RentService.getRentals;
     self.newRental = RentService.newRental;
     self.addNewRental = RentService.addNewRental;
+    self.deleteRental = RentService.deleteRental;
 }])
