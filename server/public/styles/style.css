@@ -9,9 +9,16 @@ button {
 .jumbotron {
     margin:20px;
     padding: 25px;
-    /* background-color: rgb(125, 214, 255); */
+    height: 675px;
     font-family: 'Bangers', cursive;
+    color: white;
     letter-spacing: 4px;
+    background-image: url('/images/cabin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.95;
+    text-shadow: -5px 5px #181717;
+    
 }
 
 .navbar {
@@ -23,3 +30,8 @@ button {
 .lead {
     margin-left: 25px;
 }
+
+img {
+    opacity: 0.5;
+}
+

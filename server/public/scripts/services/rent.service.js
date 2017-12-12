@@ -27,8 +27,9 @@ app.service('RentService', ['$http', function ($http) {
         }).then(function(response){
             console.log('response', response);
             swal('Thank you for adding a rental listing!')
-            self.newRental = {};
-            self.newRental = '';
+            newRental.sqft = '';
+            newRental.rent = '';
+            newRental.city = '';
             self.getRentals();
         })
     };

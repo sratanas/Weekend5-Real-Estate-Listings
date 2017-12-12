@@ -26,7 +26,9 @@ app.service('SaleService', ['$http', function ($http) {
             console.log('response', response);
             swal('Thank you for adding a for sale listing!')
             self.getListings();
-
+            newListing.sqft = '';
+            newListing.cost = '';
+            newListing.city = '';
         })
 
     }
